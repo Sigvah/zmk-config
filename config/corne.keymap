@@ -15,6 +15,17 @@
 
 
 / {
+
+	behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>; 
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -44,7 +55,7 @@
                         bindings = <
    &kp ESC    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS   &kp STAR &kp MINUS  &none &kp BSPC
    &kp GRAVE &none &none &none &none &kp PLUS        &kp HOME &kp LBRC &kp RBRC &kp END &kp BSLH &kp RET
-   &kp TAB   &none &none &none &none &kp MINUS        &kp LBKT   &kp LPAR   &kp RPAR &kp RBKT &none &to ARROWS_L
+   &kp TAB   &none &none &none &none &kp MINUS        &kp LBKT   &kp LPAR   &kp RPAR &kp RBKT &none &none
                      &trans     &trans       &trans     &trans     &trans       &trans
                         >;
                 };
