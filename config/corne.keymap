@@ -54,7 +54,7 @@
 			label = "SYMB";
                         bindings = <
    &kp ESC    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS   &kp STAR &kp MINUS  &none &kp BSPC
-   &kp GRAVE &none &none &none &none &kp PLUS        &kp HOME &kp LS(LA(N8)) &kp LS(LA(N9)) &kp END &kp LS(LA(N7)) &kp RET
+   &kp GRAVE &none &none &none &none &kp PLUS        &kp HOME &kp LS(LA(N8)) &kp LS(LA(N9)) &kp END &kp LS(LA(N7)) &kp FSLH
    &kp TAB   &none &none &none &none &kp MINUS        &kp LA(N8)   &kp LS(N8)   &kp LS(N9) &kp LA(N9) &none &none
                      &trans     &trans       &trans     &trans     &trans       &trans
                         >;
