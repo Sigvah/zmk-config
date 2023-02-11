@@ -61,7 +61,7 @@
                 };
 
                 arrows_layer {
-                        #define B31  &hm LCTRL   LEFT
+            #define B31  &hm LCTRL   LEFT
             #define B23  &hm LALT  DOWN
             #define B24  &hm LCMD   UP
             #define B25  &hm LSHFT  RIGHT   
@@ -90,4 +90,3 @@
                 };
         };
 }; 
-\
