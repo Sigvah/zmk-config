@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "keys_nb_osx.h
+#include "keys_nb_osx.h"
 
 #define DEFAULT_L 0
 #define SYMBOLS_L 1
