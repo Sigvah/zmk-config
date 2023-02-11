@@ -63,7 +63,7 @@
 			label = "SYMB";
                         bindings = <                                                                               
    &kp NON_US_BSLH    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS  &kp LS(MINUS) &kp MINUS  LS(RPAR) &kp EQUAL
-   &kp GRAVE &kp LCTRL  &kp &LALT &kp LCMD &kp LSHFT &kp PLUS        &kp HOME &kp LS(LA(N8)) &kp LS(LA(N9)) &kp END &kp LS(LA(N7)) &kp RBKT
+   &kp GRAVE &kp LCTRL  &kp LALT &kp LCMD &kp LSHFT &kp PLUS        &kp HOME &kp LS(LA(N8)) &kp LS(LA(N9)) &kp END &kp LS(LA(N7)) &kp RBKT
    &kp TAB   &none &none &none &none &kp MINUS        &kp LA(N8)   &kp LS(N8)   &kp LS(N9) &kp LA(N9) &none &kp NON_US_HASH
                      &trans     &trans       &trans     &trans     &trans       &trans
                         >;
