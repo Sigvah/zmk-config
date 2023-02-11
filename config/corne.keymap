@@ -57,14 +57,14 @@
             #define B34  &hm LCMD   UP
             #define B35  &hm LSHFT  RIGHT   
 
-            #define B36  &hm RSHFT  C_PREVIOUS
-            #define B37  &hm RCMD   C_PLAY_PAUSE
-            #define B38  &hm RALT   C_FAST_FORWARD
-            #define B39  &hm RCTRL   C_PLAY_PAUSE
+            #define B36  &hm RSHFT  NB_LEFT_BRACE
+            #define B37  &hm RCMD   NB_LEFT_PARENTHESIS
+            #define B38  &hm RALT    NB_LEFT_PARENTHESIS
+            #define B39  &hm RCTRL   NB_RIGHT_BRACE
 			label = "SYMB";
                         bindings = <                                                                               
    &kp NON_US_BSLH    &kp EXCL       &kp AT       &kp HASH       &kp DLLR       &kp PRCNT         &kp CARET   &kp AMPS  &kp LS(MINUS) &kp MINUS  &kp LS(RPAR) &kp EQUAL
-   &kp GRAVE &kp LCTRL  &kp LALT &kp LCMD &kp LSHFT &kp PLUS        &kp HOME &kp LS(LA(N8)) &kp LS(LA(N9)) &kp END &kp LS(LA(N7)) &kp RBKT
+   &kp GRAVE &kp LCTRL  &kp LALT &kp LCMD &kp LSHFT &kp PLUS        NB_LEFT_BRACKET B36 B37 B38 B39 NB_RIGHT_BRACKET
    &kp TAB   &none &none &none &none &kp MINUS        &kp LA(N8)   &kp LS(N8)   &kp LS(N9) &kp LA(N9) &none &kp NON_US_HASH
                      &trans     &trans       &trans     &trans     &trans       &trans
                         >;
