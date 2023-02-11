@@ -73,7 +73,7 @@
 			label = "NAV";
                         bindings = <
    &kp ESC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR            &none &kp C_VOL_DN   &kp C_VOLUME_UP &none &none &none
-   &none  LEFT DOWN UP RIGHT &none                                &none B27 B28 B29 B30 &kp RET
+   &none  &kp LEFT &kp DOWN &kp UP &kp RIGHT &none                                &none B27 B28 B29 B30 &kp RET
    &kp TAB &none   &none   &kp C_PREV &kp C_NEXT &kp C_BRI_DN                         &none &none &none &none &none &none 
                     	     &trans     &trans       &trans                        &trans     &trans       &trans
                         >;
