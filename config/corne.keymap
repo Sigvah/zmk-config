@@ -41,7 +41,7 @@
             #define B20  &hm RCMD  K
             #define B21  &hm RALT   L
             #define B22  &hm RCTRL   SEMI
-            #define C10 &hm &mo SYMBOLS_L ENTER
+            #define C10 &lt SYMBOLS_L ENTER
 
 			label = "DEF";
                        bindings = <
@@ -75,7 +75,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp GRAVE    &kp LCTRL    &kp LALT         &kp LCMD   &kp LSHFT        &kp PLUS       &kp NB_LBKT          B36         B37            B38          B39       &kp NB_RBKT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-     &kp TAB        &none       &none           &kp LCMD(C)   &kp LCMD(V)     &kp MINUS     &kp LA(N8)   &kp NB_CARET  &kp NON_US_HASH &kp NB_PIPE    &kp RBKT     &kp DEL
+     &kp TAB        &none       &none           &kp LG(C     &kp LG(V)     &kp MINUS         &kp LA(N8)   &kp NB_CARET  &kp NON_US_HASH &kp NB_PIPE    &kp RBKT     &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
                                                 &trans         &trans         &trans           &trans         &trans         &trans
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
