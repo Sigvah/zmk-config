@@ -41,7 +41,7 @@
             #define B20  &hm RCMD  K
             #define B21  &hm RALT   L
             #define B22  &hm RCTRL   SEMI
-            #define C10 &hm SYMBOLS_L ENTER
+            #define C10 &hm &mo SYMBOLS_L ENTER
 
 			label = "DEF";
                        bindings = <
