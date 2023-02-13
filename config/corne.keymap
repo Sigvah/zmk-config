@@ -41,6 +41,7 @@
             #define B20  &hm RCMD  K
             #define B21  &hm RALT   L
             #define B22  &hm RCTRL   SEMI
+            #define C10 &hm SYMBOLS_L ENTER
 
 			label = "DEF";
                        bindings = <
@@ -51,7 +52,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
        &kp GRAVE        &kp Z       &kp X           &kp C       &kp V           &kp B            &kp N          &kp M        &kp COMMA   &kp PERIOD    &kp SLASH    &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-                                                &mo ARROWS_L  &mo SYMBOLS_L   &kp ENTER        &kp BSPC   &kp SPACE     &mo NUMBERS_L
+                                                &mo ARROWS_L  &mo SYMBOLS_L   C10        &kp BSPC   &kp SPACE     &mo NUMBERS_L
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 
             >;
