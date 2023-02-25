@@ -159,7 +159,7 @@
             #define WB34  &hm LCTRL   UP
             #define WB35  &hm LSHFT  RIGHT   
 
-            #define WB36  &hm RSHFT  WNB_LEFT_BRACE
+            #define WB36  &hm LSHFT  WNB_LEFT_BRACE
             #define WB37  &hm LCTRL   WNB_LEFT_PARENTHESIS
             #define WB38  &hm LALT    WNB_RIGHT_PARENTHESIS
             #define WB39  &hm LCMD   WNB_RIGHT_BRACE
