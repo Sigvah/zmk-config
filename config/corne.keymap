@@ -166,7 +166,7 @@
 			label = "SYMB";
                         bindings = <                                                                               
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-   &kp WNB_SQT        &kp EXCL     &kp AT       &kp WNB_HASH       &kp DLLR     &kp PRCN       &kp CARET    &kp AMPS    &kp LS(MINUS) &kp WNB_BSLH  &kp LS(RPAR)     &kp EQUAL
+   &kp WNB_SINGLE_QUOTE &kp EXCL     &kp AT       &kp WNB_HASH       &kp DLLR     &kp PRCN       &kp CARET    &kp AMPS    &kp LS(MINUS) &kp WNB_BSLH  &kp LS(RPAR)     &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp GRAVE    &kp LCTRL    &kp LALT         &kp LCMD   &kp LSHFT        &kp PLUS       &kp WNB_LBKT          WB36         WB37            WB38     WB39       &kp WNB_RBKT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
