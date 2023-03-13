@@ -69,18 +69,18 @@
             #define B34  &hm LCMD   UP
             #define B35  &hm LSHFT  RIGHT   
 
-            #define B36  &hm RSHFT  NB_LEFT_BRACE
-            #define B37  &hm RCMD   NB_LEFT_PARENTHESIS
-            #define B38  &hm RALT    NB_RIGHT_PARENTHESIS
-            #define B39  &hm RCTRL   NB_RIGHT_BRACE
+            #define B36  &hm RSHFT  NB_QMARK
+            #define B37  &hm RCMD   NB_LEFT_BRACE
+            #define B38  &hm RALT    NB_RIGHT_BRACE
+            #define B39  &hm RCTRL   NB_PIPE
 			label = "SYMB";
                         bindings = <                                                                               
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp NB_SQT     &kp EXCL     &kp AT       &kp NB_HASH     &kp DLLR     &kp PRCNT         &kp CARET      &kp AMPS    &kp LS(MINUS) &kp NB_BSLH   &kp LS(RPAR)     &kp EQUAL
+     &kp NB_SQT     &kp EXCL     &kp AT       &kp NB_HASH     &kp DLLR     &kp PRCNT         &kp CARET      &kp AMPS    &kp NB_LPAR &kp NB_RPAR  &kp LS(RPAR)     &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp GRAVE    &kp LCTRL    &kp LALT         &kp LCMD   &kp LSHFT        &kp PLUS       &kp NB_LBKT          B36         B37            B38          B39       &kp NB_RBKT
+      &kp GRAVE    &kp LCTRL    &kp LALT         &kp LCMD   &kp LSHFT        &kp PLUS       &kp NB_BSLH          B36         B37            B38          B39       &kp NB_A
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-     &caps_word        &none       &kp LG(X)       &kp LG(C)     &kp LG(V)     &kp MINUS         &kp LA(N8)   &kp NB_AT      &kp NB_PIPE &kp NB_CARET    &kp NB_TILDE     &kp DEL
+     &caps_word        &none       &kp LG(X)       &kp LG(C)     &kp LG(V)     &kp MINUS    &kp LA(N8)   &kp NB_CARET   &kp NB_LBKT &kp NB_RBKT    &kp NB_TILDE     &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
                                                 &trans         &trans         &trans           &trans         &trans         &trans
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -154,23 +154,23 @@
                 };  
 
                 symbols_layer_win {
-            #define WB32  &hm LCMD   LEFT
-            #define WB33  &hm LALT  DOWN
-            #define WB34  &hm LCTRL   UP
-            #define WB35  &hm LSHFT  RIGHT   
+            #define B32  &hm LCTRL   LEFT
+            #define B33  &hm LALT  DOWN
+            #define B34  &hm LCMD   UP
+            #define B35  &hm LSHFT  RIGHT   
 
-            #define WB36  &hm LSHFT  WNB_LEFT_BRACE
-            #define WB37  &hm LCTRL   WNB_LEFT_PARENTHESIS
-            #define WB38  &hm LALT    WNB_RIGHT_PARENTHESIS
-            #define WB39  &hm LCMD   WNB_RIGHT_BRACE
+            #define B36  &hm RSHFT  WNB_QMARK
+            #define B37  &hm RCMD   WNB_LEFT_BRACE
+            #define B38  &hm RALT    WNB_RIGHT_BRACE
+            #define B39  &hm RCTRL   WNB_PIPE
 			label = "SYMB";
                         bindings = <                                                                               
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-   &kp WNB_SQT        &kp EXCL     &kp AT       &kp WNB_HASH       &kp DLLR     &kp PRCNT       &kp CARET    &kp AMPS    &kp LS(MINUS) &kp WNB_BSLH  &kp LS(RPAR)     &kp EQUAL
+     &kp WNB_SQT     &kp EXCL     &kp AT       &kp WNB_HASH     &kp DLLR     &kp PRCNT         &kp CARET      &kp AMPS    &kp WNB_LPAR &kp WNB_RPAR  &kp LS(RPAR)     &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp GRAVE    &kp LCTRL    &kp LALT         &kp LCMD   &kp LSHFT        &kp PLUS       &kp WNB_LBKT          WB36         WB37            WB38     WB39       &kp WNB_RBKT
+      &kp GRAVE    &kp LCTRL    &kp LALT         &kp LCMD   &kp LSHFT        &kp PLUS       &kp WNB_BSLH          B36         B37            B38          B39       &kp WNB_A
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-     &kp TAB        &none       &kp LG(X)       &kp LG(C)     &kp LG(V)     &kp MINUS         &kp LA(N8)   &kp WNB_AT      &kp WNB_PIPE &kp WNB_CARET    &kp WNB_TILDE     &kp DEL
+     &caps_word        &none       &kp LG(X)       &kp LG(C)     &kp LG(V)     &kp MINUS    &kp LA(N8)   &kp WNB_CARET   &kp WNB_LBKT &kp WNB_RBKT    &kp WNB_TILDE     &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
                                                 &trans         &trans         &trans           &trans         &trans         &trans
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
