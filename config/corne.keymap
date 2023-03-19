@@ -30,7 +30,7 @@
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
     global-quick-tap;
-    flavor = "tap-unless-interrupted";
+    flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
     };
