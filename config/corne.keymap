@@ -29,6 +29,7 @@
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
+    global-quick-tap;
     flavor = "tap-unless-interrupted";
     bindings = <&kp>, <&kp>;
 };
@@ -57,7 +58,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
        &kp NB_LT        &kp Z       &kp X           &kp C       &kp V           &kp B            &kp N          &kp M        &kp COMMA   &kp PERIOD    &kp SLASH    &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-                                                &mo ARROWS_L  &mo SYMBOLS_L   C10              &kp BSPC   &mt LC(LS(LALT)) SPACE     &mo NUMBERS_L
+                                                &mo ARROWS_L  &mo SYMBOLS_L   C10              &kp BSPC   &hm LC(LS(LALT)) SPACE     &mo NUMBERS_L
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 
             >;
