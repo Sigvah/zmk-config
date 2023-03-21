@@ -48,6 +48,7 @@
             #define B21  &hm RALT   L
             #define B22  &hm RCTRL   SEMI
             #define C10 &lt NUMBERS_L ENTER
+            #define C9  &mo SYMBOLS_L &sk LSHIFT
 
 			label = "DEF";
                        bindings = <
