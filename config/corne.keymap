@@ -40,7 +40,7 @@ test: test {
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&sk>;
+            bindings = <&mo>, <&sk>;
         };
     };
         keymap {
@@ -57,7 +57,7 @@ test: test {
             #define B21  &hm RALT   L
             #define B22  &hm RCTRL   SEMI
             #define C10 &lt NUMBERS_L ENTER
-            #define C9  &lt SYMBOLS_L LSHIFT
+            #define C9  &test SYMBOLS_L LSHIFT
 
 			label = "DEF";
                        bindings = <
