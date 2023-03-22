@@ -33,15 +33,28 @@
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
-test: test {
-            compatible = "zmk,behavior-hold-tap";
-            label = "THUMB STICKY SHIFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&sk>;
-        };
+	behaviors {
+        thb: thumb_mods {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HOMEROW MODS";
+    #binding-cells = <2>;
+    tapping-term-ms = <300>;
+    quick-tap-ms = <200>;
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+};
+combo_caps-word { 
+     bindings = <&cw>; 
+     key-positions = <16 19>; 
+     slow-release; 
+     layers = <BAS>; 
+ };
+ combo_cancel-caps { 
+     bindings = <&kp &K_ CANCEL>; 
+     key-positions = <14 21>; 
+     slow-release; 
+     layers = <BAS>; 
+ };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -55,12 +68,10 @@ test: test {
             #define B19  &hm RSHFT  J
             #define B20  &hm RCMD  K
             #define B21  &hm RALT   L
-            #define B22  &hm RCTRL   SEMI
-            #define C10 &lt NUMBERS_L ENTER
-            #define C9  &test SYMBOLS_L LSHIFT
-            #define C8 &lt SYMBOLS_L SPACE
-            #define C7 &hm LC(LS(LALT)) BSPC
-            #define C6 &lt ARROWS_L &caps_word
+            #define B22  &hm RCTRL SEMI
+            #define C10 &thb LSHFT ENTER
+            #define C11 &thb LSHFT BSPC
+
 
 			label = "DEF";
                        bindings = <
@@ -71,7 +82,7 @@ test: test {
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
        &kp NB_LT        &kp Z       &kp X           &kp C       &kp V           &kp B            &kp N          &kp M        &kp COMMA   &kp PERIOD    &kp SLASH    &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-                                                C6                   C9       C10              C7                 C8       &mo NUMBERS_L
+                                                &mo ARROWS_L  &mo SYMBOLS_L   C10              &kp BSPC   &hm LC(LS(LALT)) SPACE     &mo NUMBERS_L
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 
             >;
@@ -92,7 +103,7 @@ test: test {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp NB_SQT     &kp EXCL     &kp AT       &kp NB_HASH     &kp DLLR     &kp PRCNT         &kp CARET      &kp AMPS    &kp NB_LPAR &kp NB_RPAR  &kp LS(RPAR)     &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp GRAVE    &kp LS(LEFT)      &kp LS(DOWN)      &kp LS(UP)        &kp LS(RIGHT)        &kp PLUS       &kp NB_BSLH          B36         B37            B38          B39       &kp NB_AT
+      &kp GRAVE    &kp LCTRL    &kp LALT         &kp LCMD   &kp LSHFT        &kp PLUS       &kp NB_BSLH          B36         B37            B38          B39       &kp NB_AT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
      &caps_word        &none       &kp LG(X)       &kp LG(C)     &kp LG(V)     &kp MINUS    &kp LA(N8)   &kp NB_CARET   &kp NB_LBKT &kp NB_RBKT    &kp NB_TILDE     &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
@@ -132,11 +143,11 @@ test: test {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp ESC          &none         &none           &none       &none       &none             &kp BSPC     &hm F7 N7      &hm F8 N8      &hm F9 N9     &none       &kp BSPC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-         &none        &none         &hm F2 F2   &kp SPACE     &kp NB_STAR &kp MINUS           &kp NB_EQUAL &hm F4 N4       &hm F5 N5      &hm F6 N6    &kp NB_DOT      &kp RET
+         &none        &none         &hm F2 F2        &none     &kp NB_STAR &kp MINUS           &kp NB_EQUAL &hm F4 N4       &hm F5 N5      &hm F6 N6    &kp NB_DOT      &kp RET
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
          &kp TAB      &none         &none          &none    &kp NB_FSLH     &kp SLASH       &hm F10 N0	    &hm F1 N1      &hm F2 N2      &hm F3 N3 &kp NB_COMMA       &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-                                                &trans         &kp SPACE         &trans            &trans         &trans         &trans
+                                                &trans         &trans         &trans            &trans         &trans         &trans
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
