@@ -43,6 +43,7 @@
     bindings = <&kp>, <&kp>;
                 };
         };
+};
         combos {
 combo_caps-word {
 compatible = "zmk,combos";
