@@ -36,15 +36,15 @@
 	behaviors {
         thb: thumb_mods {
     compatible = "zmk,behavior-hold-tap";
-    label = "HOMEROW MODS";
+    label = "THUMB MODS";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
-    flavor = "tap-preferred";
+    flavor = "tap-unless-interrupted";
     bindings = <&kp>, <&kp>;
 };
 combo_caps-word { 
-     bindings = <&cw>; 
+     bindings = <&caps_word>; 
      key-positions = <16 19>; 
      slow-release; 
      layers = <DEF>; 
