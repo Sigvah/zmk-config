@@ -60,8 +60,7 @@ test: test {
             #define C9  &test SYMBOLS_L LSHIFT
             #define C8 &lt SYMBOLS_L SPACE
             #define C7 &hm LC(LS(LALT)) BSPC
-            #define C6 &hm lt ARROWS_L &caps_word
-
+            #define C6 &lt ARROWS_L &caps_word
 
 			label = "DEF";
                        bindings = <
