@@ -32,7 +32,7 @@
     global-quick-tap;
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
-};
+                };
         thb: thumb_mods {
     compatible = "zmk,behavior-hold-tap";
     label = "THUMB MODS";
@@ -41,8 +41,9 @@
     quick-tap-ms = <200>;
     flavor = "tap-unless-interrupted";
     bindings = <&kp>, <&kp>;
-};
+                };
         };
+/ {
         combos{
 combo_caps-word { 
      bindings = <&caps_word>; 
@@ -57,6 +58,7 @@ combo_caps-word {
      layers = <DEF>; 
  };
     };
+};
         keymap {
                 compatible = "zmk,keymap";
 
