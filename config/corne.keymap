@@ -53,7 +53,7 @@ compatible = "zmk,combos";
  };
  combo_cancel-caps { 
         compatible = "zmk,combos";
-     bindings = <&kp &K_ CANCEL>; 
+     bindings = <&kp CANCEL>; 
      key-positions = <14 21>; 
      slow-release; 
      layers = <DEF>; 
