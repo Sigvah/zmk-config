@@ -33,7 +33,6 @@
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
-	behaviors {
         thb: thumb_mods {
     compatible = "zmk,behavior-hold-tap";
     label = "THUMB MODS";
