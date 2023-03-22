@@ -49,13 +49,13 @@
 
                 default_layer {
             #define B13  &hm LCTRL   A  
-            #define B14  &hm LALT  S
-            #define B15  &hm LCMD   D
-            #define B16  &hm LSHFT  F
+            #define B14  &hm LCTRL  S
+            #define B15  &hm LALT   D
+            #define B16  &hm LCMD  F
 
-            #define B19  &hm RSHFT  J
-            #define B20  &hm RCMD  K
-            #define B21  &hm RALT   L
+            #define B19  &hm RCMD  J
+            #define B20  &hm RALT  K
+            #define B21  &hm RCTRL   L
             #define B22  &hm RCTRL   SEMI
             #define C10 &thb LSHFT ENTER
             #define C11 &thb LSHFT BSPC
