@@ -22,7 +22,7 @@
 
 / {
 
-	behaviors {
+	´´´behaviors {
         hm: homerow_mods {
     compatible = "zmk,behavior-hold-tap";
     label = "HOMEROW MODS";
@@ -43,6 +43,22 @@
     bindings = <&kp>, <&kp>;
                 };
         };
+        combos {
+combo_caps-word {
+compatible = "zmk,combos";
+     bindings = <&caps_word>; 
+     key-positions = <16 19>; 
+     slow-release; 
+     layers = <DEF>; 
+ };
+ combo_cancel-caps { 
+        compatible = "zmk,combos";
+     bindings = <&kp &K_ CANCEL>; 
+     key-positions = <14 21>; 
+     slow-release; 
+     layers = <DEF>; 
+ };
+    };
 
         keymap {
                 compatible = "zmk,keymap";
