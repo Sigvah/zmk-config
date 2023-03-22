@@ -42,6 +42,8 @@
     flavor = "tap-unless-interrupted";
     bindings = <&kp>, <&kp>;
 };
+        };
+        combos{
 combo_caps-word { 
      bindings = <&caps_word>; 
      key-positions = <16 19>; 
