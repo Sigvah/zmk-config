@@ -68,9 +68,10 @@ combo_caps-word {
             #define B19  &hm RSHFT  J
             #define B20  &hm RCMD  K
             #define B21  &hm RALT   L
-            #define B22  &hm RCTRL SEMI
+            #define B22  &hm RCTRL   SEMI
             #define C10 &thb LSHFT ENTER
             #define C11 &thb LSHFT BSPC
+            #define C12 &hm LC(LS(LALT)) SPACE
 
 
 			label = "DEF";
@@ -82,7 +83,7 @@ combo_caps-word {
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
        &kp NB_LT        &kp Z       &kp X           &kp C       &kp V           &kp B            &kp N          &kp M        &kp COMMA   &kp PERIOD    &kp SLASH    &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-                                                &mo ARROWS_L  &mo SYMBOLS_L   C10              &kp BSPC   &hm LC(LS(LALT)) SPACE     &mo NUMBERS_L
+                                                &mo ARROWS_L  &mo SYMBOLS_L   C10              C11           C12        &mo NUMBERS_L
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 
             >;
@@ -161,7 +162,7 @@ combo_caps-word {
             #define WB20  &hm LCTRL  K
             #define WB21  &hm LALT   L
             #define WB22  &hm LCMD   SEMI
-            #define C10 &lt NUMBERS_L ENTER
+              #define WC10 &thb LSHFT ENTER
 
 			label = "DEF";
                        bindings = <
@@ -172,7 +173,7 @@ combo_caps-word {
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
        &kp WNB_LT      &kp Z       &kp X           &kp C       &kp V           &kp B            &kp N          &kp M        &kp COMMA   &kp PERIOD    &kp SLASH    &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-                                                &mo ARROWS_L_WIN  &mo SYMBOLS_L_WIN   C10              &kp BSPC   &kp SPACE     &mo NUMBERS_L_WIN
+                                                &mo ARROWS_L_WIN  &mo SYMBOLS_L_WIN   WC10              &kp BSPC   &kp SPACE     &mo NUMBERS_L_WIN
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 
             >;
