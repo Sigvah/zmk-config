@@ -47,13 +47,13 @@ combo_caps-word {
      bindings = <&cw>; 
      key-positions = <16 19>; 
      slow-release; 
-     layers = <BAS>; 
+     layers = <DEF>; 
  };
  combo_cancel-caps { 
      bindings = <&kp &K_ CANCEL>; 
      key-positions = <14 21>; 
      slow-release; 
-     layers = <BAS>; 
+     layers = <DEF>; 
  };
     };
         keymap {
