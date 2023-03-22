@@ -21,7 +21,6 @@
 
 
 / {
-                combos {
 combo_caps-word {
 compatible = "zmk,combos";
      bindings = <&caps_word>; 
@@ -37,7 +36,6 @@ compatible = "zmk,combos";
      layers = <DEF>; 
  };
     };
-};
 / {
 
 	behaviors {
