@@ -21,22 +21,6 @@
 
 
 / {
-cc: combo_caps-word {
-compatible = "zmk,combos";
-     bindings = <&caps_word>; 
-     key-positions = <16 19>; 
-     slow-release; 
-     layers = <DEF>; 
- };
- ccc: combo_cancel-caps { 
-        compatible = "zmk,combos";
-     bindings = <&kp CANCEL>; 
-     key-positions = <14 21>; 
-     slow-release; 
-     layers = <DEF>; 
- };
-    };
-/ {
 
 	behaviors {
         hm: homerow_mods {
