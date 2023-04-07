@@ -27,8 +27,8 @@
     compatible = "zmk,behavior-hold-tap";
     label = "HOMEROW MODS";
     #binding-cells = <2>;
-    tapping-term-ms = <300>;
-    quick-tap-ms = <200>;
+    tapping-term-ms = <200>;
+    quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
@@ -83,7 +83,7 @@
             #define B34  &hm LCMD   UP
             #define B35  &hm LSHFT  RIGHT   
 
-            #define B36  &hm RSHFT  NB_QMARK
+            #define B36  &hm RSHFT  NB_LT
             #define B37  &hm RCMD   NB_LEFT_BRACE
             #define B38  &hm RALT    NB_RIGHT_BRACE
             #define B39  &hm RCTRL   NB_PIPE
@@ -92,7 +92,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp NB_SQT     &kp EXCL     &kp AT       &kp NB_HASH     &kp DLLR     &kp PRCNT         &kp CARET      &kp AMPS    &kp NB_LPAR &kp NB_RPAR  &kp LS(RPAR)     &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp GRAVE    &kp LCTRL    &kp LALT         &kp LCMD   &kp LSHFT        &kp PLUS       &kp NB_BSLH          B36         B37            B38          B39       &kp NB_AT
+      &kp GRAVE    &kp NB_QMARK   &kp NB_BSLH   &kp NB_PIPE   &kp NB_FSLH     &kp PLUS       &kp NB_BSLH          B36         B37            B38          B39       &kp NB_AT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
      &caps_word        &none       &kp LG(X)       &kp LG(C)     &kp LG(V)     &kp MINUS    &kp LA(N8)   &kp NB_CARET   &kp NB_LBKT &kp NB_RBKT    &kp NB_TILDE     &kp DEL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
