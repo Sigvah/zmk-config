@@ -41,6 +41,9 @@
     bindings = <&kp>, <&kp>;
                 };
 thb2: thumb_mods_layer {
+        compatible = "zmk,behavior-hold-tap";
+        label = "THUMB MODS2";
+            #binding-cells = <2>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&mo>;
