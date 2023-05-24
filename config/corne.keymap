@@ -40,13 +40,13 @@
     flavor = "hold-preferred";
     bindings = <&kp>, <&kp>;
                 };
-        };
 thb2: thumb_mods_layer {
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&mo>;
         };
     };
+};
 
         keymap {
                 compatible = "zmk,keymap";
