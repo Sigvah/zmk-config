@@ -44,7 +44,7 @@
 thb2: thumb_mods_layer {
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
-            bindings = <&mo>, <&sk>;
+            bindings = <&kp>, <&mo>;
         };
     };
 
@@ -65,7 +65,7 @@ thb2: thumb_mods_layer {
             #define C11 &thb LSHFT BSPC
             #define C12 &hm LC(LS(LALT)) SPACE
             #define C9 &thb2 SPACE SYMBOLS_L
-            #define C13 &thb2 DEL  NUMBERS_L
+            #define C13 &thb2 DEL  NUMBERS_ L
 
 
 			label = "DEF";
