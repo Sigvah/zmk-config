@@ -46,7 +46,6 @@ thb2: thumb_mods_layer {
             bindings = <&kp>, <&mo>;
         };
     };
-};
 
         keymap {
                 compatible = "zmk,keymap";
