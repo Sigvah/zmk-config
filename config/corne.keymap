@@ -41,6 +41,12 @@
     bindings = <&kp>, <&kp>;
                 };
         };
+thb2: thumb_mods_layer {
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&sk>;
+        };
+    };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -58,6 +64,8 @@
             #define C10 &thb LSHFT ENTER
             #define C11 &thb LSHFT BSPC
             #define C12 &hm LC(LS(LALT)) SPACE
+            #define C9 &thb2 SPACE SYMBOLS_L
+            #define C13 &thb2 DEL  NUMBERS_L
 
 
 			label = "DEF";
