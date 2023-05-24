@@ -66,8 +66,8 @@ thb2: thumb_mods_layer {
             #define C10 &thb LSHFT ENTER
             #define C11 &thb LSHFT BSPC
             #define C12 &hm LC(LS(LALT)) SPACE
-            #define C9 &thb2 SPACE SYMBOLS_L
-            #define C13 &thb2 DEL NUMBERS_L
+            #define C9 &thb2 SYMBOLS_L SPACE
+            #define C13 &thb2 NUMBERS_L DEL
 
 
 			label = "DEF";
