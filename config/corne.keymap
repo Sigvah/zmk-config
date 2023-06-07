@@ -51,6 +51,9 @@ thb2: thumb_mods_layer {
         flavor = "hold-preferred";
         bindings = <&mo>, <&kp>;
         };
+        &caps_word {
+    continue-list = <NB_UNDERSCORE NB_MINUS>;
+};
     };
 
         keymap {
