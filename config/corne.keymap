@@ -52,7 +52,7 @@ thb2: thumb_mods_layer {
         bindings = <&mo>, <&kp>;
         };
         &caps_word {
-    continue-list = <NB_UNDERSCORE NB_MINUS>;
+    continue-list = <UNDERSCORE MINUS>;
 };
     };
 
