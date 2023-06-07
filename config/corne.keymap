@@ -19,6 +19,9 @@
 #define ARROWS_L_WIN  6
 #define NUMBERS_L_WIN 7
 
+        &caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
 
 / {
 
@@ -51,9 +54,6 @@ thb2: thumb_mods_layer {
         flavor = "hold-preferred";
         bindings = <&mo>, <&kp>;
         };
-        &caps_word {
-    continue-list = <UNDERSCORE MINUS>;
-};
     };
 
         keymap {
