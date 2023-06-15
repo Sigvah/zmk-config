@@ -91,15 +91,7 @@ thb2: thumb_mods_layer {
                 };  
 
                 symbols_layer {
-            #define B32  &hm LCTRL   LEFT
-            #define B33  &hm LCTRL  DOWN
-            #define B34  &hm LALT   UP
-            #define B35  &hm LCMD  RIGHT   
-
-            #define B36  &hm RCMD  WNB_LT
-            #define B37  &hm RALT   WNB_LEFT_BRACE
-            #define B38  &hm RCTRL    WNB_RIGHT_BRACE
-            #define B39  &hm RCTRL   WNB_GT
+            
 			label = "SYMB";
                         bindings = <                                                                               
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
@@ -186,15 +178,7 @@ thb2: thumb_mods_layer {
                 };  
 
                 symbols_layer_win {
-            #define WB32  &hm LCTRL   LEFT
-            #define WB33  &hm LCTRL  DOWN
-            #define WB34  &hm LALT   UP
-            #define WB35  &hm LCMD  RIGHT   
-
-            #define WB36  &hm RCMD  WNB_LT
-            #define WB37  &hm RALT   WNB_LEFT_BRACE
-            #define WB38  &hm RCTRL    WNB_RIGHT_BRACE
-            #define WB39  &hm RCTRL   WNB_GT
+            
 			label = "SYMB";
                         bindings = <                                                                               
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
