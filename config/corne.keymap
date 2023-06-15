@@ -107,7 +107,7 @@ thb2: thumb_mods_layer {
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp GRAVE    &kp NB_LBRC   &kp NB_RBRC   &kp NB_LPAR   &kp NB_RPAR   &kp NB_EQUAL       &kp NB_PLUS  &kp NB_MINUS   &kp NB_FSLH &kp NB_BSLH    &kp NB_APOS    &kp WNB_AT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-     &caps_word    &kp NB_LBKT    &kp NB_RBKT  &kp NP_TILDE  &kp NB_CARET   &kp NP_LT        &kp NB_UNDER   &kp NB_GT   &kp NB_DQT    &kp NB_GRAVE    &kp NB_STAR     &tog DEFAULT_L_WIN
+     &caps_word    &kp NB_LBKT    &kp NB_RBKT  &kp NP_TILDE  &kp NB_CARET   &kp NB_LT        &kp NB_UNDER   &kp NB_GT   &kp NB_DQT    &kp NB_GRAVE    &kp NB_STAR     &tog DEFAULT_L_WIN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
                                                 &trans         &kp SPACE       &trans           &trans         &trans         &trans
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
