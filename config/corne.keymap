@@ -184,7 +184,7 @@ thb2: thumb_mods_layer {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp F12       &kp WNB_GRAVE &kp WNB_DLLR &kp WNB_PRCNT    &kp WNB_AMPS   &kp WNB_STAR        &kp WNB_HASH  &kp  WNB_AT    &kp WNB_PIPE   &kp WNB_QMARK &kp WNB_EXCL       &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp GRAVE    &kp WNB_LBRC   &kp WNB_RBRC   &kp WNB_LPAR   &kp WNB_RPAR   &kp WNB_EQUAL       &kp WNB_PLUS  &kp WNB_MINUS   &kp WNB_FSLH &kp WNB_BSLH    &kp WNB_APOS    &kp WWNB_AT
+      &kp GRAVE    &kp WNB_LBRC   &kp WNB_RBRC   &kp WNB_LPAR   &kp WNB_RPAR   &kp WNB_EQUAL       &kp WNB_PLUS  &kp WNB_MINUS   &kp WNB_FSLH &kp WNB_BSLH    &kp WNB_APOS    &kp WNB_AT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
      &caps_word    &kp WNB_LBKT    &kp WNB_RBKT  &kp WNB_TILDE  &kp WNB_CARET   &kp WNB_LT        &kp WNB_UNDER   &kp WNB_GT   &kp WNB_DQT    &kp WNB_GRAVE    &kp WNB_STAR &tog DEFAULT_L_WIN 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
