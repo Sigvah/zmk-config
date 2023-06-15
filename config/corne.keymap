@@ -156,7 +156,7 @@ thb2: thumb_mods_layer {
             #define WB21  &hm RCTRL   I
             #define WB22  &hm RCTRL   O
             #define WC10 &thb LSHFT ENTER
-            #define WC11 &thb LSHFT WBSPC
+            #define WC11 &thb LSHFT BSPC
             #define WC12 &hm LC(LS(LALT)) SPACE
             #define WC8 &thb2 ARROWS_L_WIN ESC
             #define WC9 &thb2 SYMBOLS_L_WIN SPACE
