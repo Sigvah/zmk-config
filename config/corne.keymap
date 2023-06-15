@@ -199,7 +199,7 @@ thb2: thumb_mods_layer {
 			label = "SYMB";
                         bindings = <                                                                               
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp NB_GRAVE &kp NB_DLLR &kp NB_PRCNT &kp NB_AMPS &kp   NB_STAR        &kp PRCNT         &kp NB_HASH  &kp  NB_AT    &kp NB_PIPE   &kp NB_QMARK &kp NB_EXCL       &kp EQUAL
+     &kp F12       &kp NB_GRAVE &kp NB_DLLR &kp NB_PRCNT    &kp NB_AMPS   &kp NB_STAR        &kp NB_HASH  &kp  NB_AT    &kp NB_PIPE   &kp NB_QMARK &kp NB_EXCL       &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp GRAVE    &kp NB_LBRC   &kp NB_RBRC   &kp NB_LPAR   &kp NB_RPAR   &kp NB_EQUAL       &kp NB_PLUS  &kp NB_MINUS   &kp NB_FSLH &kp NB_BSLH    &kp NB_APOS    &kp WNB_AT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
