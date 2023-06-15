@@ -163,12 +163,12 @@ thb2: thumb_mods_layer {
             #define WB20  &hm RALT  E
             #define WB21  &hm RCTRL   I
             #define WB22  &hm RCTRL   O
-            #define C10 &thb LSHFT ENTER
-            #define C11 &thb LSHFT WBSPC
-            #define C12 &hm LC(LS(LALT)) SPACE
-            #define C8 &thb2 ARROWS_L ESC
-            #define C9 &thb2 SYMBOLS_L SPACE
-            #define C13 &thb2 NUMBERS_L DEL
+            #define WC10 &thb LSHFT ENTER
+            #define WC11 &thb LSHFT WBSPC
+            #define WC12 &hm LC(LS(LALT)) SPACE
+            #define WC8 &thb2 ARROWS_L ESC
+            #define WC9 &thb2 SYMBOLS_L SPACE
+            #define WC13 &thb2 NUMBERS_L DEL
 
 
 			label = "DEF";
@@ -178,9 +178,9 @@ thb2: thumb_mods_layer {
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp TAB          WB13         WB14             WB15         WB16             &kp G            &kp M          WB19           WB20           WB21          WB22         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-       &kp WNB_LT        &kp Z       &kp X           &kp C       &kp D           &kp V            &kp K          &kp H        &kp COMMA   &kp PERIOD    &kp SLASH    &caps_word
+       &kp WNB_LT        &kp Z       &kp X           &kp C       &kp D           &kp V            &kp K          &kp H        &kp WCOMMA   &kp PERIOD    &kp SLASH    &caps_word
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-                                                    C8            C9           C10                C11          C12          C13
+                                                    WC8            WC9           WC10                WC11          WC12          WC13
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 
             >;
