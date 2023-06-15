@@ -166,10 +166,9 @@ thb2: thumb_mods_layer {
             #define WC10 &thb LSHFT ENTER
             #define WC11 &thb LSHFT WBSPC
             #define WC12 &hm LC(LS(LALT)) SPACE
-            #define WC8 &thb2 ARROWS_L ESC
-            #define WC9 &thb2 SYMBOLS_L SPACE
-            #define WC13 &thb2 NUMBERS_L DEL
-
+            #define WC8 &thb2 ARROWS_L_WIN ESC
+            #define WC9 &thb2 SYMBOLS_L_WIN SPACE
+            #define WC13 &thb2 NUMBERS_L_WIN DEL
 
 			label = "DEF";
                        bindings = <
