@@ -78,7 +78,7 @@ thb2: thumb_mods_layer {
 			label = "DEF";
                        bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp WNB_SQT       &kp Q          &kp W           &kp F      &kp P           &kp B           &kp J           &kp L           &kp U       &kp Y       &kp  SEMI    &kp LBKT
+     &kp NB_GRAVE       &kp Q          &kp W           &kp F      &kp P           &kp B           &kp J           &kp L           &kp U       &kp Y       &kp  SEMI    &kp LBKT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp TAB          B13         B14             B15         B16             &kp G            &kp M          B19           B20           B21          B22         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
@@ -97,7 +97,7 @@ thb2: thumb_mods_layer {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp NB_GRAVE &kp NB_DLLR &kp NB_PRCNT &kp NB_AMPS &kp   NB_STAR        &kp PRCNT         &kp NB_HASH  &kp  NB_AT    &kp NB_PIPE   &kp NB_QMARK &kp NB_EXCL       &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp GRAVE    &kp NB_LBRC   &kp NB_RBRC   &kp NB_LPAR   &kp NB_RPAR   &kp NB_EQUAL       &kp NB_PLUS  &kp NB_MINUS   &kp NB_FSLH &kp NB_BSLH    &kp NB_APOS    &kp WNB_AT
+      &kp GRAVE    &kp NB_LBRC   &kp NB_RBRC   &kp NB_LPAR   &kp NB_RPAR   &kp NB_EQUAL       &kp NB_PLUS  &kp NB_MINUS   &kp NB_FSLH &kp NB_BSLH    &kp NB_APOS    &kp NB_AT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
      &caps_word    &kp NB_LBKT    &kp NB_RBKT  &kp NB_TILDE  &kp NB_CARET   &kp NB_LT        &kp NB_UNDER   &kp NB_GT   &kp NB_DQT    &kp NB_GRAVE    &kp NB_STAR     &tog DEFAULT_L_WIN
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
@@ -147,14 +147,14 @@ thb2: thumb_mods_layer {
                 };
                 default_layer_win {
             #define WB13  &hm LCTRL   A  
-            #define WB14  &hm LCTRL  R
+            #define WB14  &hm LCMD  R
             #define WB15  &hm LALT   S
-            #define WB16  &hm LCMD  T
+            #define WB16  &hm LCTRL  T
 
-            #define WB19  &hm RCMD  N
-            #define WB20  &hm RALT  E
-            #define WB21  &hm RCTRL   I
-            #define WB22  &hm RCTRL   O
+            #define WB19  &hm LCTRL  N
+            #define WB20  &hm LALT  E
+            #define WB21  &hm LCMD   I
+            #define WB22  &hm LCTRL   O
             #define WC10 &thb LSHFT ENTER
             #define WC11 &thb LSHFT BSPC
             #define WC12 &hm LC(LS(LALT)) SPACE
@@ -165,7 +165,7 @@ thb2: thumb_mods_layer {
 			label = "DEF";
                        bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp WNB_SQT       &kp Q          &kp W           &kp F      &kp P           &kp B           &kp J           &kp L           &kp U       &kp Y       &kp  SEMI    &kp LBKT
+     &kp WNB_GRAVE       &kp Q          &kp W           &kp F      &kp P           &kp B           &kp J           &kp L           &kp U       &kp Y       &kp  SEMI    &kp LBKT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp TAB          WB13         WB14             WB15         WB16             &kp G            &kp M          WB19           WB20           WB21          WB22         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
@@ -188,7 +188,7 @@ thb2: thumb_mods_layer {
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
      &caps_word    &kp WNB_LBKT    &kp WNB_RBKT  &kp WNB_TILDE  &kp WNB_CARET   &kp WNB_LT        &kp WNB_UNDER   &kp WNB_GT   &kp WNB_DQT    &kp WNB_GRAVE    &kp WNB_STAR &tog DEFAULT_L_WIN 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-                                                &trans         &kp SPACE       &trans           &trans         &trans         &trans
+                                                &trans         &kp SPACE       &trans           &trans         &trans         &trans&
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
