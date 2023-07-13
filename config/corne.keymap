@@ -70,7 +70,7 @@ thb2: thumb_mods_layer {
             #define B22  &hm RCTRL   O
             #define C10 &thb LSHFT ENTER
             #define C11 &thb LSHFT BSPC
-            #define C12 &hm SHORTCUT_L_WIN SPACE
+            #define C12 &hm LC(LS(LALT)) SPACE
             #define C8 &thb2 ARROWS_L ESC
             #define C9 &thb2 SYMBOLS_L SPACE
             #define C13 &thb2 NUMBERS_L DEL
@@ -158,7 +158,7 @@ thb2: thumb_mods_layer {
             #define WB22  &hm LCTRL   O
             #define WC10 &thb LSHFT ENTER
             #define WC11 &thb LSHFT BSPC
-            #define WC12 &hm LC(LS(LALT)) SPACE
+            #define WC12 &hm SHORTCUT_L_WIN SPACE
             #define WC8 &thb2 ARROWS_L_WIN ESC
             #define WC9 &thb2 SYMBOLS_L_WIN SPACE
             #define WC13 &thb2 NUMBERS_L_WIN DEL
