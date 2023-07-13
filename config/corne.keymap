@@ -18,6 +18,7 @@
 #define SYMBOLS_L_WIN 5
 #define ARROWS_L_WIN  6
 #define NUMBERS_L_WIN 7
+#define SHORTCUT_L_WIN 8
 
         &caps_word {
     continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS>;
@@ -69,7 +70,7 @@ thb2: thumb_mods_layer {
             #define B22  &hm RCTRL   O
             #define C10 &thb LSHFT ENTER
             #define C11 &thb LSHFT BSPC
-            #define C12 &hm LC(LS(LALT)) SPACE
+            #define C12 &hm SHORTCUT_L_WIN SPACE
             #define C8 &thb2 ARROWS_L ESC
             #define C9 &thb2 SYMBOLS_L SPACE
             #define C13 &thb2 NUMBERS_L DEL
@@ -135,11 +136,11 @@ thb2: thumb_mods_layer {
 			label = "NUM";
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp ESC          &none         &none           &none       &kp WNB_LT     &kp WNB_GT     &hm F12 BSPC     &hm F7 N7      &hm F8 N8      &hm F9 N9  &kp NB_MINUS   &kp NB_FSLH
+     &kp ESC          &none         &none           &none       &kp WNB_LT     &kp WNB_GT     &hm F10 BSPC     &hm F7 N7      &hm F8 N8      &hm F9 N9  &kp NB_MINUS   &kp NB_FSLH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-         &none        &none         &hm F2 F2        &none     &kp WNB_STAR &kp MINUS      &hm F11 WNB_EQUAL &hm F4 N4       &hm F5 N5      &hm F6 N6 &kp NB_PLUS   &kp NB_STAR
+         &none        &none         &hm F2 F2        &none     &kp WNB_STAR &kp MINUS      &hm F11 N0 &hm F4 N4       &hm F5 N5      &hm F6 N6 &kp NB_PLUS   &kp NB_STAR
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-         &kp TAB      &none         &none          &none    &kp WNB_FSLH     &kp SLASH       &hm F10 N0	    &hm F1 N1      &hm F2 N2      &hm F3 N3 &kp WNB_COMMA       &none
+         &kp TAB      &none         &none          &none    &kp WNB_FSLH     &kp SLASH       &hm F12 N0	    &hm F1 N1      &hm F2 N2      &hm F3 N3 &kp WNB_COMMA       &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
                                                 &trans         &trans         &trans            &trans         &trans         &trans
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -178,13 +179,15 @@ thb2: thumb_mods_layer {
                 };  
 
                 symbols_layer_win {
-            
+            #define WB40 &hm LC(C) WNB_LPAR
+            #define WB41 &hm LC(V) WNB_RPAR 
+            #define WB42 &hm LG(V) WNB_EQUAL 
 			label = "SYMB";
                         bindings = <                                                                               
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp F12       &kp WNB_GRAVE &kp WNB_DLLR &kp WNB_PRCNT    &kp WNB_AMPS   &kp WNB_STAR        &kp WNB_HASH  &kp  WNB_AT    &kp WNB_PIPE   &kp WNB_QMARK &kp WNB_EXCL       &kp EQUAL
+     &kp F12       &kp WNB_GRAVE &kp WNB_DLLR &kp WNB_PRCNT    &kp WNB_AMPS   &kp WNB_STAR   &kp WNB_HASH  &kp  WNB_AT   &kp WNB_PIPE &kp WNB_QMARK  &kp WNB_EXCL    &kp EQUAL
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp GRAVE    &kp WNB_LBRC   &kp WNB_RBRC   &kp WNB_LPAR   &kp WNB_RPAR   &kp WNB_EQUAL       &kp WNB_PLUS  &kp WNB_MINUS   &kp WNB_FSLH &kp WNB_BSLH    &kp WNB_APOS    &kp WNB_AT
+      &kp GRAVE    &kp WNB_LBRC   &kp WNB_RBRC   WB40            WB41       &kp WB42        &kp WNB_PLUS  &kp WNB_MINUS   &kp WNB_FSLH &kp WNB_BSLH  &kp WNB_APOS   &kp WNB_AT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
      &caps_word    &kp WNB_LBKT    &kp WNB_RBKT  &kp WNB_TILDE  &kp WNB_CARET   &kp WNB_LT        &kp WNB_UNDER   &kp WNB_GT   &kp WNB_DQT    &kp WNB_GRAVE    &kp WNB_STAR &tog DEFAULT_L_WIN 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
@@ -199,9 +202,9 @@ thb2: thumb_mods_layer {
             #define WB24  &hm LCMD   UP
             #define WB25  &hm LSHFT  RIGHT   
 
-            #define WB27  &hm RCMD  C_PREVIOUS
-            #define WB28  &hm RALT   C_PLAY_PAUSE
-            #define WB29  &hm RCTRL   C_FAST_FORWARD
+            #define WB27  &hm LCTRL  C_PREVIOUS
+            #define WB28  &hm LALT   C_PLAY_PAUSE
+            #define WB29  &hm LCMD   C_FAST_FORWARD
             #define WB30  &hm RCTRL   C_PLAY_PAUSE
 			label = "NAV";
                         bindings = <
@@ -222,11 +225,25 @@ thb2: thumb_mods_layer {
 			label = "NUM";
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp ESC          &none         &none           &none       &kp WNB_LT     &kp WNB_GT     &hm F12 BSPC     &hm F7 N7      &hm F8 N8      &hm F9 N9  &kp NB_MINUS   &kp NB_FSLH
+     &kp ESC          &none         &none           &none       &kp WNB_LT     &kp WNB_GT     &hm F10 BSPC     &hm F7 N7   &hm F8 N8     &hm F9 N9   &kp NB_MINUS   &kp NB_FSLH
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-         &none        &none         &hm F2 F2        &none     &kp WNB_STAR &kp MINUS      &hm F11 WNB_EQUAL &hm F4 N4       &hm F5 N5      &hm F6 N6 &kp NB_PLUS   &kp NB_STAR
+         &none        &none         &hm F2 F2        &none     &kp WNB_STAR &kp MINUS       &hm F11 N0     &hm F4 N4       &hm F5 N5      &hm F6 N6 &kp NB_PLUS   &kp NB_STAR
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-         &kp TAB      &none         &none          &none    &kp WNB_FSLH     &kp SLASH       &hm F10 N0	    &hm F1 N1      &hm F2 N2      &hm F3 N3 &kp WNB_COMMA       &none
+         &kp TAB      &none         &none          &none    &kp WNB_FSLH     &kp SLASH       &hm F12 N0	    &hm F1 N1      &hm F2 N2      &hm F3 N3 &kp WNB_COMMA       &none
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
+                                                &trans         &trans         &trans            &trans         &trans         &trans
+//                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+                        >;
+                };
+                shortcut_layer_win {
+			label = "SHO";
+                        bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp ESC          &none         &none           &none       &kp WNB_LT     &kp WNB_GT     &hm F10 BSPC     &hm F7 N7   &hm F8 N8     &hm F9 N9   &kp NB_MINUS   &kp NB_FSLH
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+         &none        &none         &hm F2 F2        &none     &kp WNB_STAR &kp MINUS       &hm F11 N0     &kp LG(N1)     &kp LG(N2)   &kp LG(N3)    &kp LG(N4)    &kp LG(N5)
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
+         &kp TAB      &none         &none          &none    &kp WNB_FSLH     &kp SLASH       &hm F12 N0	    &hm F1 N1      &hm F2 N2      &hm F3 N3 &kp WNB_COMMA       &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
                                                 &trans         &trans         &trans            &trans         &trans         &trans
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
