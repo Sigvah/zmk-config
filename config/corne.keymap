@@ -120,11 +120,11 @@ thb2: thumb_mods_layer {
 			label = "NAV";
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &bt BT_SEL 0      &none        &none        &kp PG_UP    &none        &bt BT_CLR             &none     &kp C_VOL_DN &kp K_MUTE    &kp C_VOLUME_UP  &none      &bt BT_SEL 2
+     &bt BT_SEL 0      &none        &none        &kp PG_UP    &none        &bt BT_CLR         &bt BT_CLR     &kp C_VOL_DN &kp K_MUTE    &kp C_VOLUME_UP  &none      &bt BT_SEL 2
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
          &kp HOME    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT    &kp END               &none        B27            B28            B29         B30         &bt BT_SEL 3
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-     &bt BT_SEL 1      &kp HOME      &kp PG_DN   &kp PG_DN     &kp LG(V)       &kp LG(C)       &none       &kp LG(V)       &kp LG(C)     &kp LG(X)      &none       &bt BT_CLR
+     &bt BT_SEL 1      &kp HOME      &kp PG_DN   &kp PG_DN     &kp LG(V)       &kp LG(C)       &none       &kp LG(V)       &kp LG(C)     &kp LG(X)      &none       &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
                                                    &trans         &trans         &trans       &trans         &trans         &trans
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -158,7 +158,7 @@ thb2: thumb_mods_layer {
             #define WB22  &hm LCTRL   O
             #define WC10 &thb LSHFT ENTER
             #define WC11 &thb LSHFT BSPC
-            #define WC12 &hm SHORTCUT_L_WIN SPACE
+            #define WC12 &thb2 SHORTCUT_L_WIN SPACE
             #define WC8 &thb2 ARROWS_L_WIN ESC
             #define WC9 &thb2 SYMBOLS_L_WIN SPACE
             #define WC13 &thb2 NUMBERS_L_WIN DEL
