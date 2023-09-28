@@ -60,19 +60,19 @@ thb2: thumb_mods_layer {
 
                 default_layer {
             #define B13  &hm LCTRL   A  
-            #define B14  &hm LCTRL  R
-            #define B15  &hm LALT   S
-            #define B16  &hm LCMD  T
+            #define B14  &hm LALT  R
+            #define B15  &hm LCMD   S
+            #define B16  &hm LSHFT  T
 
-            #define B19  &hm RCMD  N
-            #define B20  &hm RALT  E
-            #define B21  &hm RCTRL   I
+            #define B19  &hm RSHFT  N
+            #define B20  &hm RCMD  E
+            #define B21  &hm RALT   I
             #define B22  &hm RCTRL   O
-            #define C10 &thb LSHFT ENTER
-            #define C11 &thb LSHFT BSPC
-            #define C12 &hm LC(LS(LALT)) SPACE
+            #define C10 &thb LSHFT TAB
+            #define C11 &thb SYMBOLS_L ENTER
+            #define C12 &hm NUMBERS_L BSPC
             #define C8 &thb2 ARROWS_L ESC
-            #define C9 &thb2 SYMBOLS_L SPACE
+            #define C9 &thb2 ARROWS_L SPACE
             #define C13 &thb2 NUMBERS_L DEL
 
 
