@@ -29,7 +29,6 @@
 	behaviors {
         hm: homerow_mods {
     compatible = "zmk,behavior-hold-tap";
-    label = "HOMEROW MODS";
     #binding-cells = <2>;
     tapping-term-ms = <250>;
     flavor = "tap-preferred";
@@ -37,7 +36,6 @@
                 };
         thb: thumb_mods {
     compatible = "zmk,behavior-hold-tap";
-    label = "THUMB MODS";
     #binding-cells = <2>;
     tapping-term-ms = <300>;
     quick-tap-ms = <200>;
@@ -46,7 +44,6 @@
                 };
 thb2: thumb_mods_layer {
         compatible = "zmk,behavior-hold-tap";
-        label = "THUMB MODS2";
         #binding-cells = <2>;
         tapping-term-ms = <300>;
         quick-tap-ms = <200>;
@@ -76,7 +73,7 @@ thb2: thumb_mods_layer {
             #define C13 &thb2 NUMBERS_L DEL
 
 
-			label = "DEF";
+			display-name = "DEF";
                        bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp NB_GRAVE       &kp Q          &kp W           &kp F      &kp P           &kp B           &kp J           &kp L           &kp U       &kp Y       &kp  SEMI    &kp LBKT
@@ -93,7 +90,7 @@ thb2: thumb_mods_layer {
 
                 symbols_layer {
             
-			label = "SYMB";
+			display-name = "SYMB";
                         bindings = <                                                                               
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp NB_GRAVE &kp NB_DLLR &kp NB_PRCNT &kp NB_AMPS &kp   NB_STAR        &kp PRCNT         &kp NB_HASH  &kp  NB_AT    &kp NB_PIPE   &kp NB_QMARK &kp NB_EXCL       &kp EQUAL
@@ -117,7 +114,7 @@ thb2: thumb_mods_layer {
             #define B28  &hm RALT   C_PLAY_PAUSE
             #define B29  &hm RCTRL   C_FAST_FORWARD
             #define B30  &hm RCTRL   C_PLAY_PAUSE
-			label = "NAV";
+			display-name = "NAV";
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &bt BT_SEL 0      &none        &none        &kp PG_UP    &none        &bt BT_CLR         &bt BT_CLR     &kp C_VOL_DN &kp K_MUTE    &kp C_VOLUME_UP  &none      &bt BT_SEL 2
@@ -133,7 +130,7 @@ thb2: thumb_mods_layer {
                 };
 
                 numbers_layer {
-			label = "NUM";
+			display-name = "NUM";
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp ESC          &none         &none           &none       &kp WNB_LT     &kp WNB_GT     &hm F10 BSPC     &hm F7 N7      &hm F8 N8      &hm F9 N9  &kp NB_MINUS   &kp NB_FSLH
@@ -163,7 +160,7 @@ thb2: thumb_mods_layer {
             #define WC9 &thb2 SYMBOLS_L_WIN SPACE
             #define WC13 &thb2 NUMBERS_L_WIN DEL
 
-			label = "DEF";
+			display-name = "DEF";
                        bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp WNB_GRAVE       &kp Q          &kp W           &kp F      &kp P           &kp B           &kp J           &kp L           &kp U       &kp Y       &kp  SEMI    &kp LBKT
@@ -182,7 +179,7 @@ thb2: thumb_mods_layer {
             #define WB40 &hm LC(C) WNB_LPAR
             #define WB41 &hm LC(V) WNB_RPAR 
             #define WB42 &hm LG(V) WNB_EQUAL 
-			label = "SYMB";
+			display-name = "SYMB";
                         bindings = <                                                                               
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp F12       &kp WNB_GRAVE &kp WNB_DLLR &kp WNB_PRCNT    &kp WNB_AMPS   &kp WNB_STAR   &kp WNB_HASH  &kp  WNB_AT   &kp WNB_PIPE &kp WNB_QMARK  &kp WNB_EXCL    &kp EQUAL
@@ -206,7 +203,7 @@ thb2: thumb_mods_layer {
             #define WB28  &hm LALT   C_PLAY_PAUSE
             #define WB29  &hm LCMD   C_FAST_FORWARD
             #define WB30  &hm RCTRL   C_PLAY_PAUSE
-			label = "NAV";
+			display-name = "NAV";
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &bt BT_SEL 0      &none        &none        &kp PG_UP    &none        &bt BT_CLR             &none     &kp C_VOL_DN &kp K_MUTE    &kp C_VOLUME_UP  &none      &bt BT_SEL 2
@@ -222,7 +219,7 @@ thb2: thumb_mods_layer {
                 };
 
                 numbers_layer_win {
-			label = "NUM";
+			display-name = "NUM";
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp ESC          &none         &none           &none       &kp WNB_LT     &kp WNB_GT     &hm F10 BSPC     &hm F7 N7   &hm F8 N8     &hm F9 N9   &kp NB_MINUS   &kp NB_FSLH
@@ -236,7 +233,7 @@ thb2: thumb_mods_layer {
                         >;
                 };
                 shortcut_layer_win {
-			label = "SHO";
+			display-name = "SHO";
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp ESC          &none         &none           &none       &kp WNB_LT     &kp WNB_GT     &hm F10 BSPC     &hm F7 N7   &hm F8 N8     &hm F9 N9   &kp NB_MINUS   &kp NB_FSLH
