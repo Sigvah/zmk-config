@@ -26,30 +26,45 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+        combo_ques {
             timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&ques_excl>;
+        };
+
+        aa {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <31 32>;
+        };
+
+        ae {
+            bindings = <&kp APOS>;
+            key-positions = <3 4>;
+        };
+
+        oe {
+            bindings = <&kp SEMI>;
+            key-positions = <27 28>;
         };
     };
 };
 
 / {
     behaviors {
-          hml: homerow_mods {
-              compatible = "zmk,behavior-hold-tap";
-              #binding-cells = <2>;
-              tapping-term-ms = <160>;
-              flavor = "tap-preferred";
-              bindings = <&kp>, <&kp>;
-  
-              hold-trigger-key-positions = <6 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 36 37 38>;
-          };
+        hml: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <6 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 36 37 38>;
+        };
 
         thb: thumb_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
@@ -153,9 +168,9 @@
         numbers_layer {
             display-name = "NUM";
             bindings = <
-&kp ESC  &none  &none       &none   &kp WNB_LT    &kp WNB_GT    &hml F10 BSPC  &hml F7 N7  &hml F8 N8  &hml F9 N9  &kp NB_MINUS   &kp NB_FSLH
-&none    &none  &hml F2 F2  &none   &kp WNB_STAR  &kp MINUS     &hml F11 N0    &hml F4 N4  &hml F5 N5  &hml F6 N6  &kp NB_PLUS    &kp NB_STAR
-&kp TAB  &none  &none       &none   &kp WNB_FSLH  &kp SLASH     &hml F12 N0    &hml F1 N1  &hml F2 N2  &hml F3 N3  &kp WNB_COMMA  &none
+&kp ESC  &none  &none       &none   &kp WNB_LT    &kp WNB_GT     &kp BSPC   &kp N7   &kp N8   &kp N9  &kp NB_MINUS   &kp NB_FSLH
+&none    &none   &kp F2  &none   &kp WNB_STAR  &kp MINUS      &kp N0     &kp N4   &kp N5   &kp N6  &kp NB_PLUS    &kp NB_STAR
+&kp TAB  &none  &none       &none   &kp WNB_FSLH  &kp SLASH      &kp N0     &kp N1   &kp N2   &kp N3  &kp WNB_COMMA  &none
                             &trans  &trans        &trans        &trans         &kp N0         &trans
             >;
         };
