@@ -107,7 +107,7 @@
             #define B22  &hmr RCTRL   O
             #define FUN_TAB &thb LSHFT TAB
             #define MED_ENT &thb SYMBOLS_L ENTER
-            #define NAV_BAC &hm ARROWS_L BSPC
+            #define NAV_BAC &thb ARROWS_L BSPC
             #define C8 &thb2 ARROWS_L ESC
             #define NUM_SPC &thb2 NUMBERS_L SPACE
             #define C13 &thb2 NUMBERS_L DEL
@@ -186,9 +186,9 @@
         };
 
         symbols_layer_win {
-            #define WB40 &hm LC(C) WNB_LPAR
-            #define WB41 &hm LC(V) WNB_RPAR 
-            #define WB42 &hm LG(V) WNB_EQUAL
+            #define WB40 &hml LC(C) WNB_LPAR
+            #define WB41 &hml LC(V) WNB_RPAR 
+            #define WB42 &hml LG(V) WNB_EQUAL
 
             display-name = "SYMB";
             bindings = <
