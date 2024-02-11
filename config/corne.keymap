@@ -50,6 +50,12 @@ thb2: thumb_mods_layer {
         flavor = "hold-preferred";
         bindings = <&mo>, <&kp>;
         };
+     apos_dqt: quot_doublequot {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NB_APOS>, <&kp NB_DQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
         keymap {
@@ -65,24 +71,24 @@ thb2: thumb_mods_layer {
             #define B20  &hm RCMD  E
             #define B21  &hm RALT   I
             #define B22  &hm RCTRL   O
-            #define C10 &thb LSHFT TAB
-            #define C11 &thb SYMBOLS_L ENTER
-            #define C12 &hm NUMBERS_L BSPC
+            #define FUN_TAB &thb LSHFT TAB
+            #define MED_ENT &thb SYMBOLS_L ENTER
+            #define NAV_BAC &hm ARROWS_L BSPC
             #define C8 &thb2 ARROWS_L ESC
-            #define C9 &thb2 ARROWS_L SPACE
+            #define NUM_SPC &thb2 NUMBERS_L SPACE
             #define C13 &thb2 NUMBERS_L DEL
 
 
 			display-name = "DEF";
                        bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp NB_GRAVE       &kp Q          &kp W           &kp F      &kp P           &kp B           &kp J           &kp L           &kp U       &kp Y       &kp  SEMI    &kp LBKT
+     &kp NB_GRAVE       &kp Q          &kp W           &kp F      &kp P           &kp B           &kp J           &kp L           &kp U       &kp Y    apos_dqt    &kp LBKT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp TAB          B13         B14             B15         B16             &kp G            &kp M          B19           B20           B21          B22         &kp SQT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
        &kp NB_LT        &kp Z       &kp X           &kp C       &kp D           &kp V            &kp K          &kp H        &kp COMMA   &kp PERIOD    &kp SLASH    &caps_word
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┼
-                                                    C8            C9           C10                C11          C12          C13
+                                                    C8         NUM_SPC       FUN_TAB            MED_ENT       NAV_BAC          C13
 //                                           ╰─────────────┴──── ────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 
             >;
