@@ -23,7 +23,16 @@
         &caps_word {
     continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS>;
 };
-
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+    };
+};
 / {
 
 	behaviors {
