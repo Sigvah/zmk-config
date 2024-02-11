@@ -96,15 +96,15 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            #define B13  &hm LCTRL   A  
-            #define B14  &hm LALT  R
-            #define B15  &hm LCMD   S
-            #define B16  &hm LSHFT  T
+            #define B13  &hml LCTRL   A  
+            #define B14  &hml LALT  R
+            #define B15  &hml LCMD   S
+            #define B16  &hml LSHFT  T
 
-            #define B19  &hm RSHFT  N
-            #define B20  &hm RCMD  E
-            #define B21  &hm RALT   I
-            #define B22  &hm RCTRL   O
+            #define B19  &hmr RSHFT  N
+            #define B20  &hmr RCMD  E
+            #define B21  &hmr RALT   I
+            #define B22  &hmr RCTRL   O
             #define FUN_TAB &thb LSHFT TAB
             #define MED_ENT &thb SYMBOLS_L ENTER
             #define NAV_BAC &hm ARROWS_L BSPC
@@ -131,15 +131,15 @@
         };
 
         arrows_layer {
-            #define B31  &hm LCTRL   LEFT
-            #define B23  &hm LALT  DOWN
-            #define B24  &hm LCMD   UP
-            #define B25  &hm LSHFT  RIGHT   
+            #define B31  &hml LCTRL   LEFT
+            #define B23  &hml LALT  DOWN
+            #define B24  &hml LCMD   UP
+            #define B25  &hml LSHFT  RIGHT   
 
-            #define B27  &hm RCMD  C_PREVIOUS
-            #define B28  &hm RALT   C_PLAY_PAUSE
-            #define B29  &hm RCTRL   C_FAST_FORWARD
-            #define B30  &hm RCTRL   C_PLAY_PAUSE
+            #define B27  &hmr RCMD  C_PREVIOUS
+            #define B28  &hmr RALT   C_PLAY_PAUSE
+            #define B29  &hmr RCTRL   C_FAST_FORWARD
+            #define B30  &hmr RCTRL   C_PLAY_PAUSE
 
             display-name = "NAV";
             bindings = <
@@ -161,15 +161,15 @@
         };
 
         default_layer_win {
-            #define WB13  &hm LCTRL   A  
-            #define WB14  &hm LCMD  R
-            #define WB15  &hm LALT   S
-            #define WB16  &hm LCTRL  T
+            #define WB13  &hml LCTRL   A  
+            #define WB14  &hml LCMD  R
+            #define WB15  &hml LALT   S
+            #define WB16  &hml LCTRL  T
 
-            #define WB19  &hm LCTRL  N
-            #define WB20  &hm LALT  E
-            #define WB21  &hm LCMD   I
-            #define WB22  &hm LCTRL   O
+            #define WB19  &hmr LCTRL  N
+            #define WB20  &hmr LALT  E
+            #define WB21  &hmr LCMD   I
+            #define WB22  &hmr LCTRL   O
             #define WC10 &thb LSHFT ENTER
             #define WC11 &thb LSHFT BSPC
             #define WC12 &thb2 SHORTCUT_L_WIN SPACE
@@ -200,15 +200,15 @@
         };
 
         arrows_layer_win {
-            #define WB31  &hm LCTRL   LEFT
-            #define WB23  &hm LALT  DOWN
-            #define WB24  &hm LCMD   UP
-            #define WB25  &hm LSHFT  RIGHT   
+            #define WB31  &hml LCTRL   LEFT
+            #define WB23  &hml LALT  DOWN
+            #define WB24  &hml LCMD   UP
+            #define WB25  &hml LSHFT  RIGHT   
 
-            #define WB27  &hm LCTRL  C_PREVIOUS
-            #define WB28  &hm LALT   C_PLAY_PAUSE
-            #define WB29  &hm LCMD   C_FAST_FORWARD
-            #define WB30  &hm RCTRL   C_PLAY_PAUSE
+            #define WB27  &hmr LCTRL  C_PREVIOUS
+            #define WB28  &hmr LALT   C_PLAY_PAUSE
+            #define WB29  &hmr LCMD   C_FAST_FORWARD
+            #define WB30  &hmr RCTRL   C_PLAY_PAUSE
 
             display-name = "NAV";
             bindings = <
