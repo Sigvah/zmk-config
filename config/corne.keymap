@@ -46,6 +46,25 @@
             bindings = <&kp SEMI>;
             key-positions = <27 28>;
         };
+        combo_lpar {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <9 8>;
+        };
+
+        combo_rpara {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <32 33>;
+        };
+
+        combo-lcurl {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <2 3>;
+        };
+
+        combo_rcurl {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <26 27>;
+        };
     };
 };
 
