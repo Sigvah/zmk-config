@@ -139,9 +139,9 @@
             #define B20  &hmr RCMD  E
             #define B21  &hmr RALT   I
             #define B22  &hmr RCTRL   O
-            #define FUN_TAB &thb LSHFT TAB
-            #define MED_ENT &thb SYMBOLS_L ENTER
-            #define NAV_BAC &thb ARROWS_L BSPC
+            #define FUN_TAB &thb2 NUMBERS_L TAB
+            #define MED_ENT &thb2 SYMBOLS_L ENTER
+            #define NAV_BAC &thb2 ARROWS_L BSPC
             #define C8 &thb2 ARROWS_L ESC
             #define NUM_SPC &thb2 NUMBERS_L SPACE
             #define C13 &thb2 NUMBERS_L DEL
