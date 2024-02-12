@@ -46,24 +46,30 @@
             bindings = <&kp SEMI>;
             key-positions = <27 28>;
         };
+
         combo_lpar {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp NB_LPAR>;
             key-positions = <9 8>;
         };
 
         combo_rpara {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp NB_RPAR>;
             key-positions = <32 33>;
         };
 
         combo-lcurl {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp NB_RBRC>;
             key-positions = <2 3>;
         };
 
         combo_rcurl {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp NB_RBRC>;
             key-positions = <26 27>;
+        };
+
+        combo_at {
+            bindings = <&kp NB_AT>;
+            key-positions = <3 8>;
         };
     };
 };
@@ -177,20 +183,20 @@
 
             display-name = "NAV";
             bindings = <
-&bt BT_SEL 0  &none      &none     &kp PG_UP  &none      &bt BT_CLR    &bt BT_CLR             &kp C_VOL_DN  &kp K_MUTE    &kp C_VOLUME_UP  &none      &bt BT_SEL 2
-&kp HOME      &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp END       &none B27 B28 B29 B30  &bt BT_SEL 3  &bt BT_SEL 1  &kp HOME         &kp PG_DN  &kp PG_DN
-&kp LG(V)     &kp LG(C)  &none     &kp LG(V)  &kp LG(C)  &kp LG(X)     &none                  &none         &trans        &trans           &trans     &trans
-                                   &trans     &trans
+&bt BT_SEL 0  &none     &none          &kp PG_UP  &none      &bt BT_CLR    &bt BT_CLR             &kp C_VOL_DN  &kp K_MUTE    &kp C_VOLUME_UP  &none      &bt BT_SEL 2
+&kp HOME      &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp END       &none B27 B28 B29 B30  &bt BT_SEL 3  &bt BT_SEL 1  &kp HOME         &kp PG_DN  &kp PG_DN
+&kp LG(V)     &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &kp LG(X)     &none                  &none         &trans        &trans           &trans     &trans
+                                       &trans     &trans
             >;
         };
 
         numbers_layer {
             display-name = "NUM";
             bindings = <
-&kp ESC  &none  &none       &none   &kp WNB_LT    &kp WNB_GT     &kp BSPC   &kp N7   &kp N8   &kp N9  &kp NB_MINUS   &kp NB_FSLH
-&none    &none   &kp F2  &none   &kp WNB_STAR  &kp MINUS      &kp N0     &kp N4   &kp N5   &kp N6  &kp NB_PLUS    &kp NB_STAR
-&kp TAB  &none  &none       &none   &kp WNB_FSLH  &kp SLASH      &kp N0     &kp N1   &kp N2   &kp N3  &kp WNB_COMMA  &none
-                            &trans  &trans        &trans        &trans         &kp N0         &trans
+&kp ESC  &none  &none   &none   &kp WNB_LT    &kp WNB_GT    &kp BSPC  &kp N7  &kp N8  &kp N9  &kp NB_MINUS   &kp NB_FSLH
+&none    &none  &kp F2  &none   &kp WNB_STAR  &kp MINUS     &kp N0    &kp N4  &kp N5  &kp N6  &kp NB_PLUS    &kp NB_STAR
+&kp TAB  &none  &none   &none   &kp WNB_FSLH  &kp SLASH     &kp N0    &kp N1  &kp N2  &kp N3  &kp WNB_COMMA  &none
+                        &trans  &trans        &trans        &trans    &kp N0  &trans
             >;
         };
 
