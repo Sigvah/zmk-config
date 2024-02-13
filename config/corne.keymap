@@ -15,11 +15,12 @@
 #define SYMBOLS_L 1
 #define ARROWS_L  2
 #define NUMBERS_L 3
-#define DEFAULT_L_WIN 4
-#define SYMBOLS_L_WIN 5
-#define ARROWS_L_WIN  6
-#define NUMBERS_L_WIN 7
-#define SHORTCUT_L_WIN 8
+#define MOUSE_L 4
+#define DEFAULT_L_WIN 5
+#define SYMBOLS_L_WIN 6
+#define ARROWS_L_WIN  7
+#define NUMBERS_L_WIN 8
+#define SHORTCUT_L_WIN 9
 
 &caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS>; };
 
@@ -132,7 +133,6 @@
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
-
             label = "HMR";
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 39 40 41>;
             hold-trigger-on-release;
