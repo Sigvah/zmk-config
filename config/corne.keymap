@@ -24,6 +24,7 @@
 
 &caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS>; };
 
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -113,7 +114,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NB_APOS>, <&kp NB_DQT>;
-
+            label = "quotus";
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -121,7 +122,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NB_QMARK>, <&kp NB_EXCL>;
-
+            label = "questius";
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
