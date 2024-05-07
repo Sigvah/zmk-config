@@ -6,10 +6,10 @@
 
 #include "keys_nb_osx.h"
 #include "keys_nb_win.h"
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define DEFAULT_L 0
 #define SYMBOLS_L 1
@@ -23,7 +23,6 @@
 #define SHORTCUT_L_WIN 9
 
 &caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS>; };
-
 
 / {
     combos {
@@ -114,6 +113,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NB_APOS>, <&kp NB_DQT>;
+
             label = "quotus";
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -122,6 +122,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp NB_QMARK>, <&kp NB_EXCL>;
+
             label = "questius";
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -203,10 +204,10 @@
         numbers_layer {
             display-name = "NUM";
             bindings = <
-&kp ESC  &none      &none     &none         &kp WNB_LT    &kp WNB_GT    &kp BSPC  &kp N7  &kp N8  &kp N9  &kp NB_MINUS   &kp NB_FSLH
-&none    &kp LCTRL  &kp LALT  &kp LC(LEFT)  &kp LC(RIGHT)     &kp MINUS     &kp N0    &kp N4  &kp N5  &kp N6  &kp NB_PLUS    &kp NB_STAR
-&kp TAB  &none      &none     &none         &kp WNB_FSLH  &kp SLASH     &kp N0    &kp N1  &kp N2  &kp N3  &kp WNB_COMMA  &none
-                              &trans        &trans        &trans        &trans    &kp N0  &trans
+&kp ESC  &none      &none     &none         &kp WNB_LT     &kp WNB_GT    &kp BSPC  &kp N7  &kp N8  &kp N9  &kp NB_MINUS   &kp NB_FSLH
+&none    &kp LCTRL  &kp LALT  &kp LC(LEFT)  &kp LC(RIGHT)  &kp MINUS     &kp N0    &kp N4  &kp N5  &kp N6  &kp NB_PLUS    &kp NB_STAR
+&kp TAB  &none      &none     &none         &kp WNB_FSLH   &kp SLASH     &kp N0    &kp N1  &kp N2  &kp N3  &kp WNB_COMMA  &none
+                              &trans        &trans         &trans        &trans    &kp N0  &trans
             >;
         };
 
@@ -296,6 +297,33 @@
 &none    &none  &hml F2 F2  &none   &kp WNB_STAR  &kp MINUS     &hml F11 N0    &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)     &kp LG(N5)
 &kp TAB  &none  &none       &none   &kp WNB_FSLH  &kp SLASH     &hml F12 N0    &hml F1 N1  &hml F2 N2  &hml F3 N3  &kp WNB_COMMA  &none
                             &trans  &trans        &trans        &trans         &trans      &trans
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&kp TAB  &kp Q  &kp W  &kp E      &kp R         &kp T      &kp Y      &kp U     &kp I      &kp O    &kp P      &kp LBKT
+&kp ESC  &kp A  &kp S  &kp D      &kp F         &kp G      &kp H      &kp J     &kp K      &kp L    &kp SEMI   &kp APOS
+&kp LT   &kp Z  &kp X  &kp C      &kp V         &kp B      &kp N      &kp M     &kp COMMA  &kp DOT  &kp MINUS  &kp LGUI
+                       &kp LCTRL  &lt 11 SPACE  &kp TAB    &kp ENTER  &kp BSPC  &kp LALT
+            >;
+        };
+
+        layer_11 {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                            &trans     &trans     &trans    &trans  &kp N0  &trans
+            >;
+        };
+
+        layer_12 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
