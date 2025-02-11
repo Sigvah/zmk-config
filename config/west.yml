@@ -19,5 +19,6 @@ manifest:
     - name: zmk-fingerpunch-keyboards
       remote: sadekbaroudi
       revision: main
+      import: config/deps.yml
   self:
     path: config
