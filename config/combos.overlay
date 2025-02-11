@@ -1,0 +1,74 @@
+/*                KEY POSITIONS
+
+  ╭────────────────────╮ ╭────────────────────╮
+  │  0   1   2   3   4 │ │  5   6   7   8   9 │
+  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
+  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
+  ╰───────╮ 30  31  31 │ │ 32  33  34 ╭───────╯
+          ╰────────────╯ ╰────────────╯            */
+
+compatible = "zmk,combos";
+
+#define COMBO(NAME, BINDINGS, KEYPOS, TIMEOUT, LAYERS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    timeout-ms = <TIMEOUT>; \
+    layers = <LAYERS>; \
+  };
+
+/* System */
+COMBO(esc, &kp ESC, 1 2, 80, BASE)
+COMBO(caps, &kp CAPS, 14 15, 50, BASE)
+COMBO(tab, &kp TAB, 11 13, 50, BASE NUMB)
+COMBO(login, &kp LC(LA(DEL)), 0 1 8 9, 50, BASE)
+
+/* Brackets */
+// COMBO(lbrk, &kp LBKT, 2 3, 30, BASE NUMB)
+// COMBO(rbrk, &kp RBKT, 8 9, 30, BASE NUMB)
+// COMBO(lpar, &l_parang, 26 27, 30, BASE NUMB)
+// COMBO(rpar, &r_parang, 32 33, 30, BASE NUMB)
+COMBO(lpar_lt, &mm_lparlt, 11 12, 30, BASE NUMB)
+COMBO(rpar_gt, &mm_rpargt, 17 18, 30, BASE NUMB)
+COMBO(lbrk_lbrc, &kp LBKT, 21 22, 30, BASE NUMB)
+COMBO(rbrk_rbrc, &kp RBKT, 27 28, 30, BASE NUMB)
+
+/* Mouse */
+// COMBO(mouse1, &mkp MB1, 14 16, 30, BASE)
+// COMBO(mouse2, &mkp MB2, 2 4, 30, BASE)
+// COMBO(mouse3, &mkp MB3, 26 28, 30, BASE)
+
+/* Common Symbols */
+COMBO(dash, &kp MINUS, 3 13, 40, BASE)
+COMBO(undr, &kp UNDERSCORE, 6 16, 40, BASE)
+COMBO(at, &kp AT, 1 11, 40, BASE)
+COMBO(tilde, &kp GRAVE, 11 21, 40, BASE)
+COMBO(bslh, &kp BSLH, 12 22, 40, BASE)
+COMBO(fslh, &kp FSLH, 17 27, 40, BASE)
+
+/* Editing */
+// COMBO(tab, &kp TAB, 11 12 13, 40, BASE)
+// COMBO(stab, &kp LS(TAB), 16 17 18, 40, BASE)
+// COMBO(hme, &kp HOME, 1 2 3, 40, BASE)
+// COMBO(end, &kp END, 6 7 8, 40, BASE)
+// COMBO(glft, &kp LG(LEFT), 21 22 23, 40, BASE)
+// COMBO(grgt, &kp LG(RIGHT), 26 27 28, 40, BASE)
+
+/* Symbols */
+// COMBO(grav, &kp GRAVE, 0 10, 30, BASE)
+// COMBO(tild, &kp TILDE, 10 20, 30, BASE)
+// COMBO(excl, &kp EXCL, 1 11, 30, BASE)
+// COMBO(ampr, &kp AMPS, 11 21, 30, BASE)
+// COMBO(at, &kp AT, 2 12, 30, BASE)
+// COMBO(astr, &kp STAR, 12 22, 30, BASE)
+// COMBO(hash, &kp HASH, 3 13, 30, BASE)
+// COMBO(perc, &kp PRCNT, 13 23, 30, BASE)
+
+// COMBO(mins, &kp MINUS, 6 16, 30, BASE)
+// COMBO(unds, &kp UNDER, 16 26, 30, BASE)
+// COMBO(plus, &kp PLUS, 7 17, 30, BASE)
+// COMBO(scln, &kp SEMI, 17 27, 30, BASE)
+// COMBO(eqal, &kp EQUAL, 8 18, 30, BASE)
+// COMBO(coln, &kp COLON, 18 28, 30, BASE)
+// COMBO(bsls, &kp BSLH, 9 19, 30, BASE)
+// COMBO(pipe, &kp PIPE, 19 29, 30, BASE)
