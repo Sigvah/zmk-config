@@ -123,7 +123,7 @@
 
         navi_layer {
         bindings = <
-            &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP                &kp K_APP     &swap_next    &swap_prev    &none         &none
+            &kp INS       &kp HOME      &kp UP        &kp END       &kp PG_UP                &kp K_APP     &swap_next    &swap_prev    &none         &bootloader
             &kp LC(A)     &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN                &kp C_VOL_UP  &sk RSHIFT    &sk RCTRL     &sk RALT      &sk RGUI
             &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)                &kp C_VOL_DN  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_STOP
                                         &trans        &trans        &kp DEL                  &trans        &trans        &trans
@@ -132,7 +132,7 @@
 
         numb_layer {
         bindings = <
-            &none         &none         &none         &none         &none                   &kp EQUAL     &kp N7        &kp N8        &kp N9        &kp DOT
+            &bootloader   &none         &none         &none         &none                   &kp EQUAL     &kp N7        &kp N8        &kp N9        &kp DOT
             &sk LGUI      &sk LALT      &sk LCTL      &sk LSHIFT    &mo FUNC                &kp PLUS      &kp N4        &kp N5        &kp N6        &kp ASTRK
             &none         &none         &none         &none         &none                   &kp MINUS     &kp N1        &kp N2        &kp N3        &kp FSLH
                                         &trans        &trans        &trans                  &trans        &trans        &lt NAVI N0
