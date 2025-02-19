@@ -18,9 +18,11 @@ compatible = "zmk,combos";
   };
 
 /* System */
-COMBO(esc, &kp ESC, 1 2, 80, BASE)
+COMBO(esc, &kp ESC, 1 3, 80, BASE)
+COMBO(bwfill, &kp LC(LS(L)), 6 8, 80, BASE)
 COMBO(caps, &kp CAPS, 14 15, 50, BASE)
-COMBO(tab, &kp TAB, 11 13, 50, BASE NUMB)
+COMBO(tab, &kp TAB, 11 13, 30, BASE NUMB)
+COMBO(stab, &kp LS(TAB), 16 18, 30, BASE NUMB)
 COMBO(login, &kp LC(LA(DEL)), 0 1 8 9, 50, BASE)
 
 /* Brackets */
