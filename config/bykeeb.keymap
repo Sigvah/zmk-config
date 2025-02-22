@@ -74,7 +74,7 @@
         sft_caps: shift_capsword {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&skq LSHIFT>, <&caps_word>;
         };
 
@@ -98,13 +98,13 @@
         num_fun: num_function {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             bindings = <&mo NUMB>, <&mo FUNC>;
         };
         blconfirm: bootloader_confirmation {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             bindings = <&none>, <&bootloader>;
         };
     };
