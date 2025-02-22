@@ -26,7 +26,7 @@ COMBO(stab, &kp LS(TAB), 16 18, 30, BASE NUMB)
 COMBO(login, &kp LC(LA(DEL)), 0 1 8 9, 50, BASE)
 
 /* Brackets */
-COMBO(lbkt, &kp LBKT, 1 1, 30, BASE)
+COMBO(lbkt, &kp LBKT, 1 2, 30, BASE)
 COMBO(rbkt, &kp RBKT, 7 8, 30, BASE)
 COMBO(lpar, &kp LPAR, 11 12, 30, BASE)
 COMBO(rpar, &kp RPAR, 17 18, 30, BASE)
