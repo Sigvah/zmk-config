@@ -73,7 +73,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <175>;
-            bindings = <&kpq LSHIFT>, <&caps_word>;
+            bindings = <&skq LSHIFT>, <&caps_word>;
         };
 
         MOD_MORPH(csemi, COMMA, SEMI, (MOD_LSFT|MOD_RSFT))
