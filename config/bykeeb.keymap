@@ -28,7 +28,7 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 
-&kp {
+&sk {
     release-after-ms = <750>;
 };
 
