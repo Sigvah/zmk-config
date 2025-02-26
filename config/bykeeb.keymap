@@ -81,6 +81,28 @@
         MOD_MORPH(lparlt, LPAR, LT, (MOD_LSFT|MOD_RSFT))
         MOD_MORPH(rpargt, RPAR, GT, (MOD_LSFT|MOD_RSFT))
 
+        hmr_csemi: homerowmod_commasemi {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            bindings = <&kp RCTL>, <&mm_csemi>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <175>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
+            hold-trigger-on-release;
+        };
+        hmr_dcoln: homerowmod_dotcolon {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            bindings = <&kp RGUI>, <&mm_dcoln>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <175>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
+            hold-trigger-on-release;
+        };
         swap_next: swap_next {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
@@ -126,7 +148,7 @@
         bindings = <
             &kp Q         &kp W         &kp F         &kp P         &kp B                    &kp J         &kp L         &kp U         &kp Y         &kp SQT
             &kp A         &kp R         &kp S         &kp T         &kp G                    &kp M         &kp N         &kp E         &kp I         &kp O
-            &hml LGUI Z   &hml LALT X   &hml LCTL C   &hml LSHIFT D &kp V                    &kp K         &hmr RSHIFT H &hmr RCTL &mm_csemi   &hmr RALT &mm_dcoln   &hmr RGUI FSLH
+            &hml LGUI Z   &hml LALT X   &hml LCTL C   &hml LSHIFT D &kp V                    &kp K         &hmr RSHIFT H &hmr_csemi    &hmr_dcoln    &hmr RGUI FSLH
                                         &num_fun      &sft_caps     &kp BSPC                 &kp ENTER     &kp SPACE     &mo NAVI
         >;
         };
