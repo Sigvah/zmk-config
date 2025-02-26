@@ -83,8 +83,8 @@
 
         hmr_csemi: homerowmod_commasemi {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            bindings = <&kp RCTL &mm_csemi>;
+            #binding-cells = <2>;
+            bindings = <&kp RCTL>, <&mm_csemi>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
@@ -94,8 +94,8 @@
         };
         hmr_dcoln: homerowmod_dotcolon {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            bindings = <&kp RGUI &mm_dcoln>;
+            #binding-cells = <2>;
+            bindings = <&kp RGUI>, <&mm_dcoln>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
