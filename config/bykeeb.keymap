@@ -9,12 +9,14 @@
  #include <dt-bindings/zmk/bt.h>
  #include <dt-bindings/zmk/ext_power.h>
  #include <dt-bindings/zmk/outputs.h>
+ #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAVI 1
-#define NUMB 2
-#define FUNC 3
-#define SYST 4
+#define MOUS 2
+#define NUMB 3
+#define FUNC 4
+#define SYST 5
  
 #define MOD_MORPH(NAME, NORMAL, MODDED, MODS) \
   mm_##NAME: NAME { \
@@ -81,7 +83,7 @@
         MOD_MORPH(lparlt, LPAR, LT, (MOD_LSFT|MOD_RSFT))
         MOD_MORPH(rpargt, RPAR, GT, (MOD_LSFT|MOD_RSFT))
 
-        hmr_csemi: homerowmod_commasemi {
+        hmr_c: homerowmod_commasemi {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&mm_csemi>;
@@ -92,7 +94,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
             hold-trigger-on-release;
         };
-        hmr_dcoln: homerowmod_dotcolon {
+        hmr_d: homerowmod_dotcolon {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&mm_dcoln>;
@@ -121,6 +123,12 @@
             tapping-term-ms = <250>;
             bindings = <&mo NUMB>, <&mo FUNC>;
         };
+        nav_mou: navi_mouse {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&mo NAVI>, <&mo MOUS>;
+        };
         blconfirm: bootloader_confirmation {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -148,8 +156,8 @@
         bindings = <
             &kp Q         &kp W         &kp F         &kp P         &kp B                    &kp J         &kp L         &kp U         &kp Y         &kp SQT
             &kp A         &kp R         &kp S         &kp T         &kp G                    &kp M         &kp N         &kp E         &kp I         &kp O
-            &hml LGUI Z   &hml LALT X   &hml LCTL C   &hml LSHIFT D &kp V                    &kp K         &hmr RSHIFT H &hmr_csemi RCTL 0    &hmr_dcoln RALT 0    &hmr RGUI FSLH
-                                        &num_fun      &sft_caps     &kp BSPC                 &kp ENTER     &kp SPACE     &mo NAVI
+            &hml LGUI Z   &hml LALT X   &hml LCTL C   &hml LSHIFT D &kp V                    &kp K         &hmr RSHIFT H &hmr_c RCTL 0 &hmr_d RALT 0 &hmr RGUI FSLH
+                                        &num_fun      &sft_caps     &kp BSPC                 &kp ENTER     &kp SPACE     &nav_mou
         >;
         };
 
@@ -159,6 +167,15 @@
             &kp LC(A)     &kp LEFT      &kp DOWN      &kp RIGHT     &kp PG_DN                &kp C_VOL_UP  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_STOP
             &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)                &kp C_VOL_DN  &kp RSHIFT    &kp RCTRL     &kp RALT      &kp RGUI
                                         &trans        &trans        &kp DEL                  &trans        &trans        &trans
+            >;
+        };
+
+        mouse_layer {
+        bindings = <
+            &none         &msc SCRL_LEFT &mmv MOVE_UP &msc SCRL_RIGHT   &msc SCRL_UP         &kp K_APP     &swap_next    &swap_prev    &none         &blconfirm
+            &none         &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN       &kp C_VOL_UP  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_STOP
+            &none         &none         &none         &none         &none                    &kp C_VOL_DN  &kp RSHIFT    &kp RCTRL     &kp RALT      &kp RGUI
+                                        &trans        &trans        &trans                   &trans        &trans        &trans
             >;
         };
 
