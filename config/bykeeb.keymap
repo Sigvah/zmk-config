@@ -183,9 +183,9 @@
 
         mouse_layer {
         bindings = <
-            &none         &mkb MB2      &mmv MOVE_UP  &mkb MB1      &msc SCRL_UP             &kp K_APP     &swap_next    &swap_prev    &none         &blconfirm
+            &none         &mkp MB2      &mmv MOVE_UP  &mkp MB1      &msc SCRL_UP             &kp K_APP     &swap_next    &swap_prev    &none         &blconfirm
             &none         &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN       &kp C_VOL_UP  &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_STOP
-            &none         &mkb MB5      &mkb MB3      &mkb MB4      &none                    &kp C_VOL_DN  &kp RSHIFT    &kp RCTRL     &kp RALT      &kp RGUI
+            &none         &mkp MB5      &mkp MB3      &mkp MB4      &none                    &kp C_VOL_DN  &kp RSHIFT    &kp RCTRL     &kp RALT      &kp RGUI
                                         &trans        &trans        &trans                   &trans        &trans        &trans
             >;
         };
