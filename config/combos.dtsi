@@ -21,7 +21,7 @@
         };
 
         oe {
-            timeout-ms = <35>;7
+            timeout-ms = <35>;
             bindings = <&kp SEMI>;
             key-positions = <23 22>;
         }; 
