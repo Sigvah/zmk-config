@@ -19,7 +19,9 @@
 #
 ---
 include:
+  # - board: seeeduino_xiao_ble
+  #   shield: bykeeb_left
+  # - board: seeeduino_xiao_ble
+  #   shield: bykeeb_right
   - board: seeeduino_xiao_ble
-    shield: bykeeb_left
-  - board: seeeduino_xiao_ble
-    shield: bykeeb_right
+    shield: settings_reset
